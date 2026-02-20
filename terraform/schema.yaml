@@ -771,12 +771,17 @@ variables:
     required: true
     type: enum
     description: "Please choose the supported Kubernetes version"
-    default: "v1.29.1"
+    default: "v1.34.2"
     enum:
-      - "v1.29.1"
-      - "v1.28.2"
-      - "v1.27.10"
-      - "v1.26.7"
+      - "v1.31.1"
+      - "v1.31.10"
+      - "v1.32.1"
+      - "v1.32.10"
+      - "v1.33.0" 
+      - "v1.33.1"
+      - "v1.34.0"
+      - "v1.34.1"
+      - "v1.34.2"
 
   oke_node_shape:
     title: "Node shape"
@@ -805,6 +810,7 @@ variables:
     required: true
     type: oci:core:image:id
     description: "Please choose the supported OS image for the node"
+    #Oracle-Linux-8.10-2025.11.20-0, ocid1.image.oc1.ap-melbourne-1.aaaaaaaabkqpezotqi5i2ga7jgxu47poiwrqvqgps6ilntyv2t3w6n52iyka
     dependsOn:      
        compartmentId: ${compartment_ocid}
        operatingSystem: "Oracle Linux"
