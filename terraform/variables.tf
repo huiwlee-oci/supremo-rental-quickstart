@@ -231,7 +231,7 @@ variable "db_system_display_name" {
 variable "db_system_shape" {
   description = "postgresql shape"
   type        = string
-  default     = "PostgreSQL.VM.Standard.E4.Flex.4.64GB" # example value
+  default     = "PostgreSQL.VM.Standard.E5.Flex.4.64GB" # example value
   #change the shape value as per your requirements
 }
 
@@ -454,7 +454,7 @@ variable "should_config_public_ip_for_vm" {
 
 variable "node_shape" {
   description = "Instance shape to use for master instance."
-  default     = "VM.Standard.E4.Flex"
+  default     = "VM.Standard.E5.Flex"
 }
 
 variable "node_flex_shape_memory" {

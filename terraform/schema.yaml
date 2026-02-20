@@ -622,7 +622,7 @@ variables:
     type: string
     title: "Shape of the Compute Instance"
     required: false
-    default: "VM.Standard.E4.Flex"
+    default: "VM.Standard.E5.Flex"
     visible:
       and:
         - should_configure_compute_instance_params
